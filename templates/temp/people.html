@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>人员数据-{{ name }}</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.bootcdn.net/ajax/libs/layui/2.9.14/layui.js"></script>
+    <link href="https://cdn.bootcdn.net/ajax/libs/layui/2.9.14/css/layui.css" rel="stylesheet">
+    <link rel="icon" href="http://yapmusic.top:1000/image/icon.jpg">
+    <style>
+        img{
+            width: 180px;
+            height: 180px;
+        }
+        body{
+            text-align: center;
+        }
+        h1{
+            font-size: 50px;
+        }
+        h2{
+            font-size: 40px;
+        }
+        p{
+            font-size: 30px;
+        }
+    </style>
+</head>
+<body>
+    <img src="{{ img }}" alt="">
+    <h1>{{ name }}</h1>
+    <h2>年龄</h2>
+    <p>{{ age }}</p>
+    <h2>介绍</h2>
+    <p>{{ text }}</p>
+</body>
+</html>

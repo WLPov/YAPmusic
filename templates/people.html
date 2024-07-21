@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>人员列表</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.bootcdn.net/ajax/libs/layui/2.9.14/layui.js"></script>
+    <link href="https://cdn.bootcdn.net/ajax/libs/layui/2.9.14/css/layui.css" rel="stylesheet">
+    <link rel="icon" href="http://yapmusic.top:1000/image/icon.jpg">
+    <style>
+        body{
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <h1>人员列表</h1>
+    <div class="layui-btn-container">
+        {% for i in list %}
+        <a href="people/{{ i }}" >
+            <img src="{{ img }}" alt="">
+            <button class="layui-btn">{{ i }}</button>
+        </a>
+        {% endfor %}
+    </div>
+</body>
+</html>
